@@ -123,7 +123,7 @@ h1.h{
 }
 
 .upper-seta{
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     animation:seta 4s infinite;
     justify-content: flex-end;
 }
