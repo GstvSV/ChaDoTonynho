@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: 'Star-wars';
-    src: url('../../fonts/Starjedi.ttf') format('truetype');
+    src: url('fonts/Starjedi.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Astro-boy';
-    src: url('../../fonts/astron-boy.otf') format('opentype');
+    src: url('fonts/astron-boy.otf') format('opentype');
 }
 
 html{
@@ -27,7 +27,7 @@ html, body{
 
 main{
     height: 100vh;
-    background-image: url(../../images/lua-p.png), linear-gradient(0, #120c56, #000000 30%);
+    background-image: url(images/lua-p.png), linear-gradient(0, #120c56, #000000 30%);
     background-repeat: no-repeat;
     background-position: bottom center;
     display: flex;
@@ -198,7 +198,7 @@ h1.h{
 
 .informacoes{
     background-color: #020204;
-    background-image: url(../../images/bg2.jpg);
+    background-image: url(images/bg2.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top right;
