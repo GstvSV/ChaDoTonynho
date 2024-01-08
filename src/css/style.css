@@ -1,0 +1,348 @@
+:root{
+    --cor1: #12243D;
+    --font1: 'Astro-boy', sans-serif;
+    --font2: 'Star-wars', sans-serif;
+}
+
+@font-face {
+    font-family: 'Star-wars';
+    src: url('../../fonts/Starjedi.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Astro-boy';
+    src: url('../../fonts/astron-boy.otf') format('opentype');
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+main{
+    height: 100vh;
+    background-image: url(../../images/lua-p.png), linear-gradient(0, #120c56, #000000 30%);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    color: white;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    max-width: 400px;
+}
+
+.main-title{
+    text-align: center;
+    padding-bottom: 1px;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+    transition: text-shadow ease;
+    transition-delay: 5s;
+}
+
+.h{
+    transform: scale(0);
+    font-size: 1.3rem;  
+}
+
+h3.h{
+    transition: 1s 2s all ease;
+    font-family: var(--font1);
+}
+
+h2.h{
+    transition: 2s 4s all ease;
+    font-family: var(--font1);
+}
+
+h1.h{
+    transition: 3s 6s all ease;
+    font-size: 2rem;
+    font-family: var(--font2);
+}
+
+.info{
+    position: relative;
+    display: flex;
+}
+
+.data{
+    display: flex;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+    transition: text-shadow ease;
+    transition-delay: 5s;
+    
+}
+
+.data p{
+    margin: 0;
+}
+
+.dia{
+    padding-right: .3rem;
+    font-size: 3rem;
+    border-right: 2px solid white;
+}
+
+.mh{
+    padding-left: .5rem;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.astron{
+    width: 150px;
+    position: absolute;
+    right: 0;
+}
+
+.seta{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+.upper-seta{
+    padding-bottom: 50px;
+    animation:seta 4s infinite;
+    justify-content: flex-end;
+}
+
+.lower-seta{
+    padding-top: 50px;
+    animation:seta2 4s infinite;
+}
+
+.parte-seta{
+    display: block;
+    background-color: #060420;
+    width: 30px;
+    height: 5px;
+}
+
+.parte-seta1{
+    background-color: #060420;
+    
+}
+
+.parte-seta2{
+    background-color: white;
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.7);
+}
+
+.up-esq{
+    transform: translate(6px,15px) rotate(45deg);
+}
+
+.up-meio{
+    transform: rotate(90deg);
+    width: 60px;
+}
+
+.up-dir{
+    transform: translate(24px,25px) rotate(-45deg);
+}
+
+.lw-esq{
+    transform: translate(6px,-25px) rotate(-45deg);
+}
+
+.lw-meio{
+    transform: rotate(90deg);
+    width: 60px;
+}
+
+.lw-dir{
+    transform: translate(24px,-15px) rotate(45deg);
+}
+
+@keyframes seta{
+    0%,100%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes seta2{
+    0%,100%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(20px);
+    }
+}
+
+.informacoes{
+    background-color: #020204;
+    background-image: url(../../images/bg2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+    transition: text-shadow ease;
+    animation:  shadow 10s ease 5s infinite;
+}
+
+@keyframes shadow{
+
+    0%,100%{
+        text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.7);
+    }
+
+    20%,30%,40%,50%,60%,70%,80%{
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+    }
+}
+
+.informacoes h1{
+    margin: 0 0 50px;
+
+}
+
+.texto{
+    color: white;
+    font-size: 1.2rem;
+    padding: 70px 10px 0; 
+}
+
+.intro{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.intro h1{
+    font-size: 3rem;
+}
+
+.texto h3{
+    font-size: 1.8rem;
+    border-bottom: 2px solid;
+}
+
+.texto h4{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.sexo{
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.gen{
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.gen p{
+    margin: 0;
+}
+
+.masc{
+    font: 1.5rem;
+    color: #add8e6;
+}
+
+.fem{
+    font-size: 1.5rem;
+    color: #ffb6c1;
+}
+
+li{
+    padding-bottom: 10px;
+}
+
+a{
+    color: #FDFD96;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.salgado,
+.confirmar, 
+.local{
+    text-align: center;
+}
+
+.local{
+    padding-bottom: 50px;
+}
+
+.navinha{
+    padding: 0 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navinha img{
+    width: 150px;
+    transform: rotate(-20deg);
+    animation: nave-cor 1s infinite, nave-rotate 5s infinite;
+}
+@keyframes nave-cor{
+    from{
+        filter: drop-shadow(0px 10px 10px red);
+    }
+
+    to{
+        filter: drop-shadow(0px 10px 10px green);
+    }
+}
+
+@keyframes nave-rotate{
+    0%, 100%{
+        transform: rotate(-20deg);
+    }
+
+    50%{
+        transform: rotate(-5deg);
+    }
+}
+
+strong{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
